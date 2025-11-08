@@ -65,13 +65,21 @@ An AI-powered notification system that brings Exkatibur's voice to life. When Cl
    ```
 
 4. **Configure your API keys:**
-   Create a `.env` file in your project root:
+   Copy `.env.example` to `.env` and fill in your API keys:
+   ```bash
+   cp .env.example .env
+   # Edit .env with your actual API keys
+   ```
+
+   Required configuration:
    ```bash
    OPENAI_API_KEY=sk-proj-...
    ELEVENLABS_API_KEY=...
    ELEVENLABS_VOICE_ID=...
    USER_NAME=YourName
    ```
+
+   See `.env.example` for detailed instructions on obtaining API keys.
 
 5. **Test it:**
    ```bash
